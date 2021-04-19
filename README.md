@@ -21,5 +21,5 @@
 <br>  <i>-f</i>   The path to a DNA alignment in Phylip format.
 <br>  <i>-o</i>   The path to folder that contains the result files.
 <br>  <i>-k</i>   The minimum value of correlation between models – optional. The default value is 0.9995.
-<br><bR><b>Example:</b> <i>python FastPartition.py -f example.phy -o output</i>
+<br><bR><b>Example:</b> <i>python FastPartition.py -f Example.phy -o output</i>
 
