@@ -9,7 +9,6 @@ import argparse
 import math
 import config
 import time
-from SRate import SRate #import class SRate
 np.seterr(divide='ignore', invalid='ignore')
 
 os_type = platform.system()
