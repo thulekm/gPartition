@@ -4,7 +4,8 @@
 <b>I.	About gPartition</b>
 <br><b>gPartition</b> is a fast model-based program that automatically partition an alignment into subsets such that sites in a subset follow the same evolutionary process. The method aims at large alignments (especially genome alignments) which are hard to be partitioned by other methods. Beside consider the rate at each site, <b>gPartition</b> uses substitution model to properly group similar sites into subsets. Experiments on extremely large real datasets showed that <b>gPartition</b> was better than other partitioning methods tested. In addition, <b>gPartition</b> overcame the pitfall of site rates-based partitioning method that groups all invariant sites into one subset leading to incorrect trees.
 <br>Using the <b>gPartition</b> method will make it possible to partitioning large or whole genome datasets. The result would help to enhances the accuracy of maximum likelihood tree inference process.
-
+<br><br><b>Github: </b> https://github.com/thulekm/gPartition
+<br>
 <b>II.	Versions</b>
 <br>The <b>gPartition</b> program is available for Linux and Windows operating system.
 <br><br>
