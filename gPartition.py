@@ -643,7 +643,7 @@ for bM in bmodel:
 	bIdx += 1
 bm.write("\n==========================\n")
 
-#MERGE the same base model
+#MERGE the correlation model
 mergeModel = []
 bIdx = 0 
 while bIdx < len(bmodel)-1:
