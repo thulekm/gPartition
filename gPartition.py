@@ -542,7 +542,7 @@ if not os.path.isfile(output+"/"+filename+".srate"):
 	sIdx = 0
 	slog = open(output+"/"+filename+".srate","w+")
 	while sIdx < len(sRate):
-		sRate[sIdx] = float(sRate[sIdx])/total_fij
+		sRate[sIdx] = 1.0 - float(sRate[sIdx])/total_fij
 		slog.write(str(sRate[sIdx])+"\n")
 		sIdx += 1
 	slog.close()
@@ -563,20 +563,20 @@ if(2*tax-3 >= 100):
 	eps = float(2*tax-3)/nVar
 else:
 	eps = float(100)/nVar
-xeps = 0.0
+xeps = 1.0
 subsetIdx = []
 tempSubset = []
-while xeps <= 1:
+while xeps >= 0:
 	i = 0 
 	while i < numSite:
-		if sRate[i] >= xeps and sRate[i] < xeps+eps and siteType[i] == 0:
+		if sRate[i] <= xeps and sRate[i] > xeps-eps and siteType[i] == 0:
 			tempSubset.append(i)
 		i += 1
 	if(len(tempSubset)>=50):
 		tempSubset.sort()
 		subsetIdx.append(tempSubset)
 		tempSubset=[]
-	xeps += eps
+	xeps -= eps
 
 if(len(tempSubset) > 0):
 	tmp = []
