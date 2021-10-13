@@ -9,6 +9,8 @@ import platform
 import subprocess
 import time
 
+os_type = platform.system()
+
 if os.path.isfile("config.py"):
 	print("File config.py is exists.\n")
 	rconfig = open("config.py","r")
@@ -18,7 +20,10 @@ if os.path.isfile("config.py"):
 	rconfig.close()
 	reinstall = str(input("Do you want to overwrite? [Y/N]: "))
 	if reinstall == "Y" or reinstall == "y":
-		os.system("rm config.py")
+		if "WINDOW" in os_type.upper():
+			os.system("del config.py")
+		else:
+			os.system("rm config.py")
 		rconfig = open("config.py","w")
 		#iqtree_path = "$IQTREE/" #IQ-TREE path including splash
 		#tiger_path = "/home/lkthu/tiger_original/"
