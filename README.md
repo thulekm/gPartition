@@ -17,7 +17,7 @@
 <b>IV.	Commands</b>
 <br>python gPartition.py -f <i>alignment </i> -o <i>output</i>
 <br><br>The resulting partition scheme will be written to the <i>alignment</i>.FINAL.nex in the <i>output</i> directory.
-<br>  <i>-f</i>   The path to a DNA alignment in Phylip format.
-<br>  <i>-o</i>   The path to folder that contains the result files.
+<br>  <i>-f</i>   A nucleotide alignment in the Phylip format.
+<br>  <i>-o</i>   A folder that contains the result files.
 <br><bR><b>Example:</b> <i>python gPartition.py -f sample.phy -o output</i>
 
